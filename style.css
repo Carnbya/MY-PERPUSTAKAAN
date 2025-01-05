@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(91, 91, 228), rgba(213, 241, 208, 0.5)), url("MY PERPUSTAKAAN.jpg");
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(2, 120, 255, 0.6);
+    box-shadow: 0 2px 4px rgba(5, 5, 5, 0.5);
+}
+
+.logo {
+    width: 3cm;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background: white;
+    color: blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 2.5cm;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .logo {
+        width: 2cm;
+    }
+}

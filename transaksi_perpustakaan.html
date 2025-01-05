@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Perpustakaan</title>
+    <link rel="stylesheet" href="styles transaksi.css">
+    <script defer src="validasi_transaksi.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Transaksi Perpustakaan</h1>
+        <h1>MY PERPUSTAKAAN</h1>
+        <form id="transactionForm">
+            <div class="form-group">
+                <label for="name">Nama Peminjam:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama peminjam">
+                <small class="error-message" id="nameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM">
+                <small class="error-message" id="nimError"></small>
+            </div>
+            <div class="form-group">
+                <label for="book">Nama Buku:</label>
+                <input type="text" id="book" name="book" placeholder="Masukkan nama buku">
+                <small class="error-message" id="bookError"></small>
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">Tanggal Peminjaman:</label>
+                <input type="date" id="pickupDate" name="pickupDate">
+                <small class="error-message" id="pickupDateError"></small>
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Tanggal Pengembalian:</label>
+                <input type="date" id="returnDate" name="returnDate">
+                <small class="error-message" id="returnDateError"></small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Ingin melihat daftar transaksi? <a href="daftar_transaksi_perpustakaan.html">Klik di sini</a>.</p>
+    </div>
+</body>
+</html>
